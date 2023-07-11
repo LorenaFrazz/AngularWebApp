@@ -1,0 +1,7 @@
+<app-navbar *ngIf="currentRoute !== '/signup' && currentRoute !== '/login'"></app-navbar>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<app-footer *ngIf="currentRoute !== '/signup' && currentRoute !== '/login'"></app-footer>   
+
+

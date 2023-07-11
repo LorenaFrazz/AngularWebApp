@@ -1,0 +1,105 @@
+.backroundimgg{
+  background-image: url(https://png.pngtree.com/png-vector/20191129/ourmid/pngtree-hand-drawn-fast-food-doodle-vector-set-of-fast-food-vector-png-image_2046737.jpg);
+  width: 100%;
+  height: 100vh;
+}
+
+ h1{
+  font-family: cursive;
+ }
+
+.form-background{
+  background-color: #75CFED;
+  border-radius: 20px;
+  border: 4px solid rgb(244, 244, 30) ;
+}
+
+.signup-link{
+  margin-top: 1rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form {
+    border: 2px solid #ccc;
+    padding: 20px;
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  .is-invalid {
+    border: 1px solid red;
+  
+  }
+  
+  .error-text {
+    color: red;
+  }
+  
+  .error-snackbar {
+    background-color: red;
+  }
+  
+  .form-field input.is-invalid {
+    border: 1px solid red;
+  }
+  
+  .form-field .error-text {
+    color: red;
+  }
+  
+  
+  
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button[type="submit"]:enabled {
+    background-color: blue;
+  }
+  

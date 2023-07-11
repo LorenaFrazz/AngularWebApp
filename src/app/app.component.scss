@@ -1,0 +1,20 @@
+main{
+    background-image: url(https://png.pngtree.com/png-vector/20191129/ourmid/pngtree-hand-drawn-fast-food-doodle-vector-set-of-fast-food-vector-png-image_2046737.jpg);
+}
+
+app-footer {
+    background-color: #FF9B42;
+    text-align: center;
+    font-size: 10px;
+    font-family: cursive;
+    width: 100%;
+    
+    @media (max-width: 374px) {
+      font-size: 10px;
+      margin-top: 20px;
+      text-align: center;
+      position: sticky;
+      bottom: 0;
+      z-index: 999;
+    }
+  }

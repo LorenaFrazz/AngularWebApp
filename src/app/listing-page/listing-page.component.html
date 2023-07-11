@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="character-container overflow-container">
+    <div class="navigation">
+      <a routerLink="/home">
+        <mat-icon style="color: black">arrow_back</mat-icon>
+      </a>
+    </div>
+    <div class="title-container">
+      <h1 class="title">Lista Personaggi</h1>
+    </div>
+    <div class="search-input-container">
+      <input type="text" [(ngModel)]="searchQuery" (input)="onSearchInputChange($event)" placeholder="Cerca personaggio" class="search-input">
+    </div>
+  
+    <div class="character-list overflow-container">
+      <div *ngFor="let character of filteredCharacters" (click)="goToCharacterDetails(character.id)" class="character-item" #characterItems>
+        <img [src]="character.image" alt="{{ character.name }}" class="character-image"
+          [class.hovered]="character.isImageHovered"
+          (mouseenter)="onImageMouseEnter(character)"
+          (mouseleave)="onImageMouseLeave(character)">
+        <span class="character-name">{{ character.name }}</span>
+      </div>
+      
+      <!-- <div *ngFor="let character of filteredCharacters" (click)="goToCharacterDetails(character.id)" class="character-item">
+        <img [src]="character.image" alt="{{ character.name }}" class="character-image"
+          [class.hovered]="character.isImageHovered"
+          (mouseenter)="onImageMouseEnter(character)"
+          (mouseleave)="onImageMouseLeave(character)">
+        <span class="character-name">{{ character.name }}</span>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
